@@ -103,7 +103,7 @@ ALLOWED_HOSTS = ['1000earths.com', 'www.1000earths.com']
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = 'Europe/London'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -231,6 +231,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "initial_themes",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
